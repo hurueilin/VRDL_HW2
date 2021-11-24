@@ -1,4 +1,5 @@
 # VRDL HW2 - Street View House Numbers detection
+###### tags: `基於深度學習之視覺辨識專論`
 ## Introduction
 ![](https://i.imgur.com/NTT13MA.jpg)
 
@@ -31,7 +32,7 @@ git clone https://github.com/facebookresearch/detectron2.git
 python -m pip install -e detectron2
 ```
 
-3. Place `myTrain.py`, `mtTest.py`, and other files in this repository into the detectron2 folder(where you just installed).
+3. Place `myTrain.py`, `mtTest.py`, and other files in this repository into the detectron2 folder (the root where you just installed detectron2).
 
 ## Train & Test
 
@@ -42,10 +43,11 @@ python myTrain.py
 Note: To train from scratch, download the pretrained model of Faster R-CNN from [model zoo](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#faster-r-cnn).
 
 ---
-To test the model, run this command:
+To test the model and output `answer.json`, create a folder named `output` and put [model_final.pth](https://drive.google.com/file/d/132S-PPWmu94KEXdnRephOi8oZ2VIub-V/view?usp=sharing) inside. Then, run this command:
 ```
 python myTest.py
 ```
+It will generate `answer.json` file under `output` folder.
 
 ## Reproducing Submission on Google Colab
 https://colab.research.google.com/drive/1_Yy9I9SxHyVdY44m3mSJ7RLSgsAmMP7Z?usp=sharing
