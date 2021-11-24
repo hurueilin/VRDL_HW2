@@ -32,7 +32,7 @@ git clone https://github.com/facebookresearch/detectron2.git
 python -m pip install -e detectron2
 ```
 
-3. Place `myTrain.py`, `mtTest.py`, and other files in this repository into the detectron2 folder (the root where you just installed detectron2).
+3. Place `myTrain.py`, `mtTest.py`, and other files in this repository into the root folder (where you just installed detectron2).
 
 ## Train & Test
 
@@ -40,7 +40,7 @@ To train the model, run this command:
 ```
 python myTrain.py
 ```
-Note: To train from scratch, download the pretrained model of Faster R-CNN from [model zoo](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#faster-r-cnn).
+Note: To train from scratch, download the pretrained model of Faster R-CNN from [model zoo](https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md#faster-r-cnn). And put the model file under the root folder.
 
 ---
 To test the model and output `answer.json`, create a folder named `output` and put [model_final.pth](https://drive.google.com/file/d/132S-PPWmu94KEXdnRephOi8oZ2VIub-V/view?usp=sharing) inside. Then, run this command:
@@ -49,7 +49,7 @@ python myTest.py
 ```
 It will generate `answer.json` file under `output` folder.
 
-## Reproducing Submission on Google Colab
+## Inferencing the first 100 test images on Google Colab
 https://colab.research.google.com/drive/1_Yy9I9SxHyVdY44m3mSJ7RLSgsAmMP7Z?usp=sharing
 
 ## Results
