@@ -25,7 +25,7 @@ if __name__ == "__main__":
     # cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml"))
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml"))
     cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
-    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
+    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.01
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 10  # digit 0 ~ 9
     predictor = DefaultPredictor(cfg)
     inferenceResult = []
