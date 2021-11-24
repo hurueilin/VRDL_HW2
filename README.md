@@ -57,4 +57,4 @@ The score on CodaLab and the best speed I can get on Google Colab.
 | :-: | :-: | :-: |
 | [model_final.pth](https://drive.google.com/file/d/132S-PPWmu94KEXdnRephOi8oZ2VIub-V/view?usp=sharing)  |  0.39791  | 0.28844 |
 
-![](https://i.imgur.com/WsXcQ9J.png =600x)
+![](https://i.imgur.com/WsXcQ9J.png)
